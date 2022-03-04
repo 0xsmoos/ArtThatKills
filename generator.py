@@ -12,8 +12,8 @@ backroundWeights = [30, 40, 15, 5, 10]
 circle = ["Blue", "Green", "Orange", "Red", "Yellow"] 
 circleWeights = [30, 40, 15, 5, 10]
 
-square = ["Blue", "Green", "Orange", "Red", "Yellow"] 
-squareWeights = [30, 40, 15, 5, 10]
+square = ["Blue", "Green", "Orange", "Red", "Yellow", "House"] 
+squareWeights = [0, 0, 0, 0, 0, 100]
 
 # Dictionary variable for each trait. 
 # Eech trait corresponds to its file name
@@ -39,7 +39,8 @@ squareFiles = {
     "Green": "green-square",
     "Orange": "orange-square",
     "Red": "red-square",
-    "Yellow": "yellow-square"  
+    "Yellow": "yellow-square", 
+    "House": "house.png", 
           
 }
 
