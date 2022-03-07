@@ -3,6 +3,8 @@ from IPython.display import display
 import random
 import json
 
+#square = ["Blue", "Green", "Orange", "Red", "Yellow", "House"] 
+#squareWeights = [0, 0, 0, 0, 0, 100]
 # Each image is made up a series of traits
 # The weightings for each trait drive the rarity and add up to 100%
 
@@ -12,8 +14,8 @@ backroundWeights = [30, 40, 15, 5, 10]
 circle = ["Blue", "Green", "Orange", "Red", "Yellow"] 
 circleWeights = [30, 40, 15, 5, 10]
 
-square = ["Blue", "Green", "Orange", "Red", "Yellow", "House"] 
-squareWeights = [0, 0, 0, 0, 0, 100]
+square = ["Blue", "Green", "Orange", "Red", "Paint"] 
+squareWeights = [0, 0, 0, 0, 100]
 
 # Dictionary variable for each trait. 
 # Eech trait corresponds to its file name
@@ -39,14 +41,14 @@ squareFiles = {
     "Green": "green-square",
     "Orange": "orange-square",
     "Red": "red-square",
-    "Yellow": "yellow-square", 
-    "House": "house.png", 
+   # "Yellow": "yellow-square", 
+    "Paint": "paint-square", 
           
 }
 
 ## Generate Traits
 
-TOTAL_IMAGES = 30 # Number of random unique images we want to generate
+TOTAL_IMAGES = 1 # Number of random unique images we want to generate
 
 allImages = [] 
 
