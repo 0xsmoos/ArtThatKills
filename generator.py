@@ -15,7 +15,7 @@ circle = ["Blue", "Green", "Orange", "Red", "Yellow"]
 circleWeights = [30, 40, 15, 5, 10]
 
 square = ["Blue", "Green", "Orange", "Red", "Paint"] 
-squareWeights = [0, 0, 0, 0, 100]
+squareWeights = [5, 0, 0, 5, 90]
 
 # Dictionary variable for each trait. 
 # Eech trait corresponds to its file name
@@ -41,14 +41,14 @@ squareFiles = {
     "Green": "green-square",
     "Orange": "orange-square",
     "Red": "red-square",
-   # "Yellow": "yellow-square", 
+    #"Yellow": "yellow-square", 
     "Paint": "paint-square", 
           
 }
 
 ## Generate Traits
 
-TOTAL_IMAGES = 1 # Number of random unique images we want to generate
+TOTAL_IMAGES = 30 # Number of random unique images we want to generate
 
 allImages = [] 
 
