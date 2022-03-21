@@ -14,7 +14,7 @@ backroundWeights = [30, 40, 15, 5, 10]
 circle = ["Blue", "Green", "Orange", "Red", "Yellow"] 
 circleWeights = [30, 40, 15, 5, 10]
 
-square = ["Blue", "Green", "Orange", "Red", "Paint"] 
+square = ["Blue", "Green", "Orange", "Red", "Yellow"] 
 squareWeights = [5, 0, 0, 5, 90]
 
 # Dictionary variable for each trait. 
@@ -41,8 +41,8 @@ squareFiles = {
     "Green": "green-square",
     "Orange": "orange-square",
     "Red": "red-square",
-    #"Yellow": "yellow-square", 
-    "Paint": "paint-square", 
+    "Yellow": "yellow-square", 
+    #"Paint": "paint-square", 
           
 }
 
@@ -55,6 +55,8 @@ allImages = []
 # A recursive function to generate unique image combinations
 def createNewImage():
     
+    j = 30
+
     newImage = {} #
 
     # For each trait category, select a random trait based on the weightings 
@@ -62,6 +64,7 @@ def createNewImage():
     newImage ["Circle"] = random.choices(circle, circleWeights)[0]
     newImage ["Square"] = random.choices(square, squareWeights)[0]
     
+
     if newImage in allImages:
         return createNewImage()
     else:
